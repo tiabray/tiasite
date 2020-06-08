@@ -1,0 +1,50 @@
+INSTALLED_APPS = [
+
+]
+
+<head>
+  <script async src="https://cdn.byu.edu/byu-theme-components/2.x.x/byu-theme-components.min.js"></script>
+  <link rel="stylesheet" href="https://cdn.byu.edu/byu-theme-components/2.x.x/byu-theme-components.min.css" media="all">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<byu-header>
+    <h1 slot="site-title">Your Site Title Here</h1>
+</byu-header>
+
+<byu-footer></byu-footer>
+
+<style>
+  html, body {
+  height: 100%;
+  }
+
+  .containing-element {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  }
+
+  .page-content {
+  flex-grow: 1;
+  }
+
+</style>
+
+<html>
+  <body>
+    <div class="containing-element">
+
+        <byu-header>
+        <h1 slot="site-title">Your Site Title Here</h1>
+        </byu-header>
+
+        <div class="page-content">
+        <!-- Put your site content here -->
+        </div>
+
+        <byu-footer></byu-footer>
+
+    </div>
+  </body>
+</html>
